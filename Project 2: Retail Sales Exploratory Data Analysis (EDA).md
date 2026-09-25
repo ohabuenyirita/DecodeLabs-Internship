@@ -68,7 +68,8 @@ print(f"Total Missing Values: {df.isnull().sum().sum()}")
 ### 2. Product Revenue Driver Analysis
 
 # Aggregate total revenue by product line
-```revenue_by_product = df.groupby('Product')['TotalPrice'].sum().sort_values(ascending=False)
+```python
+revenue_by_product = df.groupby('Product')['TotalPrice'].sum().sort_values(ascending=False)
 
 print("Total Revenue by Product:")
 print(revenue_by_product)
@@ -79,7 +80,8 @@ print(revenue_by_product)
 ### 3. Order Status & Fulfillment Distribution
 
 # Evaluate order status counts across fulfillment lifecycle
-```status_distribution = df['OrderStatus'].value_counts()
+```python
+status_distribution = df['OrderStatus'].value_counts()
 status_percentage = df['OrderStatus'].value_counts(normalize=True) * 100
 
 print("Order Status Distribution (Counts):")
@@ -94,7 +96,8 @@ print(status_percentage.round(2))
 ### 4. Statistical Rigor & IQR Outlier Detection
 
 # Compute Interquartile Range (IQR) for numerical transaction values
-```Q1 = df['TotalPrice'].quantile(0.25)
+```python
+Q1 = df['TotalPrice'].quantile(0.25)
 Q3 = df['TotalPrice'].quantile(0.75)
 IQR = Q3 - Q1
 
@@ -113,7 +116,7 @@ print(f"Number of Revenue Outliers Identified: {len(outliers)}")
 ### 5. Categorical & Temporal Distribution Summary
 
 # Summary statistics for categorical features
-```
+```python
 print("Summary Statistics for Transaction Features:")
 print(df.describe(include='all'))
 ```
