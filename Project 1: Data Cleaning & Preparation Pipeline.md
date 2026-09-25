@@ -66,7 +66,8 @@ df['CouponCode'] = df['CouponCode'].fillna('No Coupon')
 
 ### 3. Duplicate Identification & Verification
 # Scan for primary key collisions
-```duplicate_orders = df[df.duplicated(subset=['OrderID'], keep=False)]
+```python
+duplicate_orders = df[df.duplicated(subset=['OrderID'], keep=False)]
 print(f'Duplicate OrderID rows found: {len(duplicate_orders)}')
 
 # Drop duplicate OrderIDs, keeping the first record
@@ -79,7 +80,8 @@ print(f'Rows remaining after cleaning OrderID duplicates: {len(df)}')
 
 ### 4. Text & Date Normalization
 # Strip whitespace and apply Title Case to text columns
-```text_cols = ['Product', 'ShippingAddress', 'PaymentMethod', 'OrderStatus', 'ReferralSource']
+```python
+text_cols = ['Product', 'ShippingAddress', 'PaymentMethod', 'OrderStatus', 'ReferralSource']
 for col in text_cols:
     if col in df.columns:
         df[col] = df[col].astype(str).str.strip().str.title()
@@ -93,7 +95,7 @@ df['Date'] = pd.to_datetime(df['Date']).dt.strftime('%Y-%m-%d')
 
 ### 5. Final Sanity Check & Export
 # Quick preview of the cleaned dataframe
-```
+```python
 print(df[['OrderID', 'Date', 'Product', 'CouponCode', 'OrderStatus']].head())
 
 # Export the cleaned DataFrame to an Excel file
