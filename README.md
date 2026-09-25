@@ -18,10 +18,10 @@ Each directory contains a self-contained project complete with raw/cleaned data 
 
 | Project Module | Domain / Core Focus | Primary Tech Stack | Status | Documentation Link |
 | :--- | :--- | :--- | :---: | :---: |
-| **Project 1** | Data Cleaning, Preprocessing & Quality Pipeline | Python, Pandas, OpenPyXL | Completed | [View Project 1](./Project%201:%20Data%20Cleaning%20%26%20Preparation%20Pipeline...) |
-| **Project 2** | Retail Sales Exploratory Data Analysis (EDA) | Python, Matplotlib, Seaborn | Completed | [View Project 2](./Project%202:%20Retail%20Sales%20Exploratory%20Data%20Analysis...) |
-| **Project 3** | Relational Database Querying & Business Analytics | MS SQL Server, SSMS, T-SQL | Completed | [View Project 3](./Project%203:%20Relational%20Database%20Querying%20%26%20Data...) |
-| **Project 4** | Interactive Business Intelligence Dashboard | Power BI, DAX, Data Modeling | In Progress  | *Coming Soon* |
+| **Project 1** | Data Cleaning, Preprocessing & Quality Pipeline | Python, Pandas, OpenPyXL | Completed | [View Project 1](https://github.com/ohabuenyirita/DecodeLabs-Internship/blob/main/Project%201%3A%20Data%20Cleaning%20%26%20Preparation%20Pipeline.md) |
+| **Project 2** | Retail Sales Exploratory Data Analysis (EDA) | Python, Matplotlib, Seaborn | Completed | [View Project 2](https://github.com/ohabuenyirita/DecodeLabs-Internship/blob/main/Project%202%3A%20Retail%20Sales%20Exploratory%20Data%20Analysis%20(EDA).md) |
+| **Project 3** | Relational Database Querying & Business Analytics | MS SQL Server, SSMS, T-SQL | Completed | [View Project 3](https://github.com/ohabuenyirita/DecodeLabs-Internship/blob/main/Project%203%3A%20Relational%20Database%20Querying%20%26%20Data%20Analysis%20(SQL).md) |
+| **Project 4** | Interactive Business Intelligence Dashboard | Power BI, DAX, Data Modeling | In Progress ⏳ | *Coming Soon* |
 
 ---
 
